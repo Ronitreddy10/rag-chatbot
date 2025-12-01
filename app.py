@@ -152,7 +152,7 @@ def compute_pdf_signature(uploaded_files):
     pairs.sort()
     return "|".join(pairs)
 
-
+# NOTE: Remove stray invalid function definition; the correct function below is `process_documents_if_needed`.
 def process_documents_if_needed(pdf_docs_list, api_key, language):
     """Auto-process the PDFs when uploaded or when explicitly requested. Returns True if processed."""
     if not pdf_docs_list:
